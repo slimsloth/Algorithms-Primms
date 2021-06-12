@@ -3,7 +3,7 @@
 ### Group Members: Sean Mitchell, Jason Mora-Mendoza
 
 ### How to run:
-$ make
+~$ make
 ### Summary
 
 
