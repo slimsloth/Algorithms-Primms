@@ -37,5 +37,6 @@ void printGraph(Graph G, vector<vector<int>> weights, std::string fileName) {
     }
   }
   std::cout << "Total weight: " << totalWeight << "\n";
+  std::cout << "Output written to text file in ./output/ \n";
   outFile << "Total weight: " << totalWeight << "\n";
 }
