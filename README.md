@@ -9,7 +9,7 @@
 
 ### Requirements
 #### 1. Executing the Prim-Jarnik algorithm by hand
-- [ ] Complete Exercises 6-3 (b) and 6-3 (c) from Algorithm Design in Three Acts.
+- [x] Complete Exercises 6-3 (b) and 6-3 (c) from Algorithm Design in Three Acts.
 #### 2. Reproducing the example graphs in C++
 - [x] Implement Exercises 6-3 (b) and 6-3 (c) Set the graph to be undirected, and insert undirected edges.
 - [x] Once the graph is constructed, traverse the data structure and print out each vertex, edge, and weight.
