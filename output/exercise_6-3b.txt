@@ -1,0 +1,15 @@
+# vertices: 9
+# edges:    12
+0  -->  1	Weight: 2
+0  -->  3	Weight: 3
+1  -->  2	Weight: 2
+1  -->  4	Weight: 7
+2  -->  5	Weight: 2
+3  -->  4	Weight: 7
+3  -->  6	Weight: 6
+4  -->  5	Weight: 4
+4  -->  7	Weight: 4
+5  -->  8	Weight: 2
+6  -->  7	Weight: 4
+7  -->  8	Weight: 6
+Total weight: 49
