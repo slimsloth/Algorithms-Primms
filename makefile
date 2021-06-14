@@ -1,7 +1,7 @@
-OBJS	= partB.o functions.o partC.o
-SOURCE	= partB.cpp functions.cpp partC.cpp
-HEADER	= header.h ngraph.hpp set_ops.hpp, set_ops.hpp
-OUT	= myproject
+OBJS	= main.o functions.o
+SOURCE	= main.cpp functions.cpp
+HEADER	= header.h ngraph.hpp set_ops.hpp,
+OUT	= CPSC335_Proj2_SeanM_JasonM
 CC	 = g++
 FLAGS	 = -g -c
 LFLAGS	 =
@@ -9,14 +9,11 @@ LFLAGS	 =
 all: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
 
-partB.o: partB.cpp
-	$(CC) $(FLAGS) partB.cpp
+main.o: main.cpp
+	$(CC) $(FLAGS) main.cpp
 
 functions.o: functions.cpp
 	$(CC) $(FLAGS) functions.cpp
-
-partC.o: partC.cpp
-	$(CC) $(FLAGS) partC.cpp
 
 
 clean:

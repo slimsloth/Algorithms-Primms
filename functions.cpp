@@ -28,7 +28,6 @@ Graph prims(Graph G, vector<vector<int>> weights) {
       }
     }
     MST.insert_undirected_edge(b);
-    std::cout << b.first << " --> " << b.second << "\n";
     // mark both ends spanned (one already was)
     spanned[b.first] = true;
     spanned[b.second] = true;
