@@ -4,6 +4,7 @@
 
 ### How to run on Ubuntu:
 ~$ make
+
 ~$ make run
 ### Summary
 This program implements Exercises 6-3 (b) and 6-3 (c) in C++, using the ngraph library.
