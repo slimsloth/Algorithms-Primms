@@ -3,29 +3,49 @@
 #include <fstream>
 using namespace NGraph;
 
+
+/**********************************************************************
+ * Prim's Algorithm - Find MST of a Graph
+ * ********************************************************************
+ * Input: a graph G and a weight matrix for G
+ * output: A graph, MST
+ * ********************************************************************/
 Graph prims(Graph G, vector<vector<int>> weights) {
   Graph MST;
   MST.set_undirected();
   std::vector<bool> spanned(G.num_vertices(), false);
   spanned[0] = true;
 
-  while (MST.num_vertices() < G.num_vertices() - 1) {
+  while (MST.num_vertices() < G.num_vertices()) {
     // Sequential search for the minimum-weight bridge edge
-    edge b;
+    bool first = true;
+    Graph::edge b;
     std::vector<Graph::edge> edges = G.edge_list();
     for (int i = 0; i < edges.size(); i++) {
       // i is a bridge edge when one end is in S and the other is not
       if ((spanned[edges[i].first] != spanned[edges[i].second]) &&
-          (b == NULL || weights[][] < weights[][])) {
+          (first || weights[edges[i].first][edges[i].second] <
+                        weights[b.first][b.second])) {
+        first = false;
         b = edges[i];
       }
-      std::cout << edges[i].first << " --> " << edges[i].second << "\n";
     }
+    MST.insert_undirected_edge(b);
+    std::cout << b.first << " --> " << b.second << "\n";
+    // mark both ends spanned (one already was)
+    spanned[b.first] = true;
+    spanned[b.second] = true;
   }
 
   return MST;
 }
 
+/**********************************************************************
+ * Print Graph
+ * ********************************************************************
+ * Input: a graph, G, a weight matrix for G, and a text output file name
+ * output: Nothing - prints to console and text file
+ * ********************************************************************/
 void printGraph(Graph G, vector<vector<int>> weights, std::string fileName) {
   std::ofstream outFile(fileName);
   int totalWeight = 0;
