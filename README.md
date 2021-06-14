@@ -19,8 +19,13 @@ This program implements Exercises 6-3 (b) and 6-3 (c) in C++, using the ngraph l
 - [x] implement the Prim-Jarnik algorithm as a function on NGraph::Graph objects and weight matrices. Output each edge in the minimum spanning tree and its total weight.
 ## Relevant Files:
 header.h - the main header file
+
 main.cpp - the main test driver code for both exercises.
+
 functions.cpp - prims() and printGraph() are implemented in this file
+
 ngraph.hpp - for ngraph library
+
 set_ops.hpp - for ngraph operations
+
 /output/ - directory for storing output text files.
