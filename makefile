@@ -1,6 +1,6 @@
-OBJS	= partB.o functions.o
-SOURCE	= partB.cpp functions.cpp
-HEADER	= header.h ngraph.hpp set_ops.hpp
+OBJS	= partB.o functions.o partC.o
+SOURCE	= partB.cpp functions.cpp partC.cpp
+HEADER	= header.h ngraph.hpp set_ops.hpp, set_ops.hpp
 OUT	= myproject
 CC	 = g++
 FLAGS	 = -g -c
@@ -14,6 +14,9 @@ partB.o: partB.cpp
 
 functions.o: functions.cpp
 	$(CC) $(FLAGS) functions.cpp
+
+partC.o: partC.cpp
+	$(CC) $(FLAGS) partC.cpp
 
 
 clean:

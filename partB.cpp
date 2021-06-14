@@ -1,5 +1,4 @@
 #include "header.h"
-#include "functions.cpp"
 
 /******************************************************************************
  * TEST DRIVER CODE FOR EXERCISE 6-3 (b)
