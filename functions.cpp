@@ -1,7 +1,4 @@
-#include "ngraph.hpp"
-#include "set_ops.hpp"
-#include <fstream>
-using namespace NGraph;
+#include "header.h"
 
 
 /**********************************************************************

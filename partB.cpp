@@ -1,7 +1,5 @@
+#include "header.h"
 #include "functions.cpp"
-#include "ngraph.hpp"
-#include "set_ops.hpp"
-using namespace NGraph;
 
 /******************************************************************************
  * TEST DRIVER CODE FOR EXERCISE 6-3 (b)
