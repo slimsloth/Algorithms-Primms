@@ -7,7 +7,7 @@
 ### Summary
 
 
-### Requirements
+### Project Requirements
 #### 1. Executing the Prim-Jarnik algorithm by hand
 - [x] Complete Exercises 6-3 (b) and 6-3 (c) from Algorithm Design in Three Acts.
 #### 2. Reproducing the example graphs in C++

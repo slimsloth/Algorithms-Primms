@@ -5,10 +5,22 @@ using namespace NGraph;
 
 Graph prims(Graph G, vector<vector<int>> weights) {
   Graph MST;
+  MST.set_undirected();
   std::vector<bool> spanned(G.num_vertices(), false);
   spanned[0] = true;
+
   while (MST.num_vertices() < G.num_vertices() - 1) {
-    // sequential search for the minimum-weight bridge edge
+    // Sequential search for the minimum-weight bridge edge
+    edge b;
+    std::vector<Graph::edge> edges = G.edge_list();
+    for (int i = 0; i < edges.size(); i++) {
+      // i is a bridge edge when one end is in S and the other is not
+      if ((spanned[edges[i].first] != spanned[edges[i].second]) &&
+          (b == NULL || weights[][] < weights[][])) {
+        b = edges[i];
+      }
+      std::cout << edges[i].first << " --> " << edges[i].second << "\n";
+    }
   }
 
   return MST;

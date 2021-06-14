@@ -26,5 +26,14 @@ int main() {
 
   printGraph(G, weights, "./output/exercise_6-3c.txt");
 
+  std::vector<Graph::edge> edges = G.edge_list();
+  for(int i=0; i<edges.size(); i++) {
+    std::cout << edges[i].first <<  " --> " << edges[i].second << "\n";
+
+  }
+
+
+
+
   return 0;
 }
