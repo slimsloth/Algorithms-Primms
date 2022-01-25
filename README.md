@@ -1,5 +1,5 @@
-# CPSC-335-Project-2
-[Project Instructions](https://docs.google.com/document/d/1UJtswYXID4-ydz3O9o8uO9VDWEt4drj0hTofA7-sVug/edit#)
+# Algorithms-Primms
+
 ### Group Members: Sean Mitchell, Jason Mora-Mendoza
 
 ### How to run on Ubuntu:
